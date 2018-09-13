@@ -189,7 +189,8 @@ div {
 }
 
 .post {
-    padding: 25px 0 15px;
+    padding: 25px 0 25px;
+    border-bottom: 1px solid #ddd;
     .post-title {
         margin: 0;
         color: #555;
