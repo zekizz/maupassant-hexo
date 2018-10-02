@@ -1727,3 +1727,18 @@ em.search-keyword {
         margin: 8px 0;
     }
 }
+
+.footnote-item{
+    font-size: 15px;
+    line-height: 1.77; 
+    color: #2097d2;
+}
+
+.footnotes .footnotes-list .footnote-item p{
+    margin:0;
+}
+
+.footnote-backref{
+    display: none;   
+}
+
