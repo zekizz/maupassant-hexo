@@ -5,17 +5,17 @@ changyan: ## Your changyan appid, e.g. cyrALsXc8
 changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 gitment:
   enable: false ## If you want to use Gitment comment system please set the value to true.
-  owner: ## Your GitHub ID, e.g. username
-  repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
-  client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
-  client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+  owner: zekizz
+  repo: zekizz.github.io ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
+  client_id: 3c979d527e295b5aac32 ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret: 96baace238768867151a307379cf012d5d75ed5c ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 gitalk:
-  enable: false ## If you want to use Gitment comment system please set the value to true.
-  owner:  ## Your GitHub ID, e.g. username
-  repo:  ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
-  client_id:  ## GitHub client ID, e.g. 75752dafe7907a897619
-  client_secret:  ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
-  admin:  ## Github repo owner and collaborators, only these guys can initialize github issues.
+  enable: true ## If you want to use Gitment comment system please set the value to true.
+  owner: zekizz
+  repo:  zekizz.github.io ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
+  client_id: 1555e820bb856719851c ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret:  80ab839ffa73d8cb59819329cf2055b4e193684a ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+  admin: zekizz ## Github repo owner and collaborators, only these guys can initialize github issues.
 valine: ## https://valine.js.org
   enable: false ## If you want to use Valine comment system, please set the value to true.
   appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
@@ -27,13 +27,14 @@ valine: ## https://valine.js.org
   pageSize: 10 ## Number of comments per page.
   guest_info: nick,mail,link ## Attributes of reviewers.
 
+languages: zh-CN
 google_search: true ## Use Google search, true/false.
 baidu_search: false ## Use Baidu search, true/false.
 swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
 tinysou: ## Your tinysou_key, e.g. 4ac092ad8d749fdc6293
 self_search: false ## Use a jQuery-based local search engine, true/false.
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
-baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
+baidu_analytics: 9v8oIeMvyrTiR5LW ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
 fancybox: true ## If you want to use fancybox please set the value to true.
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: true ## If you want to add list number to toc please set the value to true.
@@ -56,21 +57,28 @@ donate:
   btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
   paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
 post_copyright:
-  enable: false ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
-  author: ## Your author name, e.g. tufu9441
+  enable: true ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
+  author: zeki
   copyright_text: ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
 
+favicon: /iconL.png
+
+# MathJax Support
+mathjax:
+  enable: true
+  per_page: false
+
 menu:
-  - page: home
+  - page: 首页
     directory: .
     icon: fa-home
-  - page: archive
+  - page: 归档
     directory: archives/
     icon: fa-archive
-  - page: about
+  - page: 关于
     directory: about/
     icon: fa-user
-  - page: rss
+  - page: 订阅
     directory: atom.xml
     icon: fa-rss
 
@@ -83,12 +91,10 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - links
 
 links:
-  - title: site-name1
-    url: http://www.example1.com/
-  - title: site-name2
-    url: http://www.example2.com/
-  - title: site-name3
-    url: http://www.example3.com/
+  # - title: 
+  #   url: http://www.example1.com/
+  - title: zeki的csdn
+    url: https://blog.csdn.net/crystal_zero
 
 timeline:
   - num: 1
@@ -103,6 +109,7 @@ timeline:
 # Static files
 js: js
 css: css
+img: img
 
 # Theme version
 version: 0.0.0
