@@ -1,6 +1,6 @@
 disqus: ## Your disqus_shortname, e.g. username
 uyan: ## Your uyan_id. e.g. 1234567
-livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
+livere: MTAyMC80NzQ1Ni8yMzk1Ng== ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
 changyan: ## Your changyan appid, e.g. cyrALsXc8
 changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 gitment:
@@ -10,7 +10,7 @@ gitment:
   client_id: 3c979d527e295b5aac32 ## GitHub client ID, e.g. 75752dafe7907a897619
   client_secret: 96baace238768867151a307379cf012d5d75ed5c ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 gitalk:
-  enable: true ## If you want to use Gitment comment system please set the value to true.
+  enable: false ## If you want to use Gitment comment system please set the value to true.
   owner: zekizz
   repo:  zekizz.github.io ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
   client_id: 1555e820bb856719851c ## GitHub client ID, e.g. 75752dafe7907a897619
@@ -39,7 +39,7 @@ fancybox: true ## If you want to use fancybox please set the value to true.
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: true ## If you want to add list number to toc please set the value to true.
 shareto: false ## If you want to use the share button please set the value to true, and you must have hexo-helper-qrcode installed.
-busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
+busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 wordcount: false ## If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
 canvas_nest:
@@ -67,6 +67,12 @@ favicon: /iconL.png
 mathjax:
   enable: true
   per_page: false
+
+highlight:
+  enable: true
+  auto_detect: true
+  line_number: true
+  tab_replace:
 
 menu:
   - page: 首页

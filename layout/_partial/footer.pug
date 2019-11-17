@@ -1,4 +1,10 @@
-#footer= 'Copyright © ' + date(Date.now(), 'YYYY') + ' '
+#footer
+  if theme.busuanzi == true
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span>本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+      <span>总访客<span id="busuanzi_value_site_uv"></span>人</span>
+      <br>
+  = 'Copyright © ' + date(Date.now(), 'YYYY') + ' '
   a(href=url_for('.'), rel='nofollow')= config.title + '.'
   |  Powered by
   a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
